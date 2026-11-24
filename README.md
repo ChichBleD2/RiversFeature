@@ -50,8 +50,6 @@ Only one copy may be installed: do not keep an unpacked folder of the mod next t
 - **Structure check:** ruins, BetterRuins buildings and trader camps are not placed in water, half-submerged, or on
   islands and spits. A building on a river bank or shore is fine.
 
-**Not in 1.0.0:** plain standalone lakes are deferred (switched off, code kept; `PlainLakes` in the lakes config), and
-erosion was removed.
 
 ## Settings
 
