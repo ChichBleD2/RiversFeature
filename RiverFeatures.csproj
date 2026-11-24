@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    River Features: the river network part (src/Rivers: hierarchy, source lakes, deltas, oxbows, traces, dry rivers) and the
+    terrain pass (src: swamps, delta banks, deferred plain lakes). Game folder from VINTAGE_STORY or -p:VINTAGE_STORY=<dir>.
+    net10.0 = 1.22.7's runtime.
+    Rivers is NOT referenced: its internals are reached by reflection (src/Rivers/RiversAdapter.cs).
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>RiverFeatures</AssemblyName>
+    <RootNamespace>RiverFeatures</RootNamespace>
+    <Version>1.0.0</Version>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <VINTAGE_STORY Condition="'$(VINTAGE_STORY)' == ''">$([System.Environment]::GetEnvironmentVariable('VINTAGE_STORY'))</VINTAGE_STORY>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="src/**/*.cs" />
+    <InternalsVisibleTo Include="RiverFeatures.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI"><HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSSurvivalMod"><HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSEssentials"><HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="OpenTK.Mathematics"><HintPath>$(VINTAGE_STORY)/Lib/OpenTK.Mathematics.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <VINTAGE_STORY Condition="'$(VINTAGE_STORY)' == ''">$([System.Environment]::GetEnvironmentVariable('VINTAGE_STORY'))</VINTAGE_STORY>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../RiverFeatures.csproj" />
+  </ItemGroup>
+
+  <!-- The mod references these with Private=false; the test host needs them copied to load the mod's types. -->
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI"><HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="VSEssentials"><HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="OpenTK.Mathematics"><HintPath>$(VINTAGE_STORY)/Lib/OpenTK.Mathematics.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="protobuf-net"><HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath><Private>true</Private></Reference>
+  </ItemGroup>
+
+</Project>

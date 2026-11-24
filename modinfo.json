@@ -1,0 +1,13 @@
+{
+  "type": "code",
+  "modid": "riverfeatures",
+  "name": "River Features",
+  "version": "1.0.0",
+  "description": "Rivers add-on: longer rivers with a main stem and narrower tributaries, varied source lakes, deltas, oxbow lakes, traces of old channels, dry rivers and calm headwaters, plus swamps.",
+  "side": "Universal",
+  "requiredOnClient": false,
+  "dependencies": {
+    "game": "1.22.0",
+    "rivers": "5.0.2"
+  }
+}

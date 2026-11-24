@@ -1,0 +1,242 @@
+[
+	{
+		"op": "add",
+		"path": "/variants/-",
+		"file": "game:worldgen/landforms.json",
+		"side": "Server",
+		"value": {
+			"code": "tw-rollinglowlands",
+			"comment": "UNVERIFIED: 9 octave entries follow TerraPrety 1.22 data, wiki 1.19.8 example shows 10. Gentle rolling lowlands, soft swells just above sea level.",
+			"hexcolor": "#7FB069",
+			"weight": 1.0,
+			"terrainOctaves": [
+				0,
+				0,
+				0.15,
+				0.3,
+				0.25,
+				0.1,
+				0.05,
+				0.02,
+				0
+			],
+			"terrainOctaveThresholds": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0
+			],
+			"terrainYKeyPositions": [
+				0.43,
+				0.46,
+				0.5,
+				0.54
+			],
+			"terrainYKeyThresholds": [
+				1,
+				0.7,
+				0.25,
+				0
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/variants/-",
+		"file": "game:worldgen/landforms.json",
+		"side": "Server",
+		"value": {
+			"code": "tw-broadplains",
+			"comment": "UNVERIFIED: 9 octave entries follow TerraPrety 1.22 data, wiki 1.19.8 example shows 10. Gentle broad plains, nearly flat, very low relief.",
+			"hexcolor": "#A7C957",
+			"weight": 1.2,
+			"terrainOctaves": [
+				0,
+				0,
+				0,
+				0.1,
+				0.35,
+				0.1,
+				0.03,
+				0,
+				0.01
+			],
+			"terrainOctaveThresholds": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0
+			],
+			"terrainYKeyPositions": [
+				0.43,
+				0.45,
+				0.48,
+				0.51
+			],
+			"terrainYKeyThresholds": [
+				1,
+				0.55,
+				0.12,
+				0
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/variants/-",
+		"file": "game:worldgen/landforms.json",
+		"side": "Server",
+		"value": {
+			"code": "tw-steepridges",
+			"comment": "UNVERIFIED: 9 octave entries follow TerraPrety 1.22 data, wiki 1.19.8 example shows 10. Steep ridge lines with sharp relief. Flight test 3: the lowest key was 0.25 of world height, so valleys reached ~58 blocks below sea level and filled with water (chasms at y 99 / 118, sea 138); now solid up to 0.435, just above sea level (0.43).",
+			"hexcolor": "#8D6E63",
+			"weight": 0.6,
+			"terrainOctaves": [
+				0.2,
+				0.4,
+				0.5,
+				0.4,
+				0.3,
+				0.3,
+				0.25,
+				0.2,
+				0.15
+			],
+			"terrainOctaveThresholds": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0.1,
+				0.1,
+				0.05
+			],
+			"terrainYKeyPositions": [
+				0.435,
+				0.47,
+				0.58,
+				0.72,
+				0.88
+			],
+			"terrainYKeyThresholds": [
+				1,
+				0.85,
+				0.55,
+				0.25,
+				0
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/variants/-",
+		"file": "game:worldgen/landforms.json",
+		"side": "Server",
+		"value": {
+			"code": "tw-cliffmassif",
+			"comment": "UNVERIFIED: 9 octave entries follow TerraPrety 1.22 data, wiki 1.19.8 example shows 10. Cliff-walled massif; abrupt wall at 0.50-0.52 is intended. Flight test 3: lowest key raised from 0.30 to 0.435 (no water-filled pits below sea level).",
+			"hexcolor": "#6D6875",
+			"weight": 0.4,
+			"terrainOctaves": [
+				0.3,
+				0.4,
+				0.3,
+				0.2,
+				0.2,
+				0.2,
+				0.3,
+				0.25,
+				0.2
+			],
+			"terrainOctaveThresholds": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0.1,
+				0.1,
+				0.05
+			],
+			"terrainYKeyPositions": [
+				0.435,
+				0.5,
+				0.52,
+				0.75,
+				0.8
+			],
+			"terrainYKeyThresholds": [
+				1,
+				0.95,
+				0.55,
+				0.3,
+				0
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/variants/-",
+		"file": "game:worldgen/landforms.json",
+		"side": "Server",
+		"value": {
+			"code": "tw-terracedhills",
+			"comment": "UNVERIFIED: 9 octave entries follow TerraPrety 1.22 data, wiki 1.19.8 example shows 10. Terraced hills; flat shelves are intended.",
+			"hexcolor": "#BC8A5F",
+			"weight": 0.7,
+			"terrainOctaves": [
+				0.25,
+				0.35,
+				0.4,
+				0.3,
+				0.2,
+				0.15,
+				0.2,
+				0.2,
+				0.15
+			],
+			"terrainOctaveThresholds": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0
+			],
+			"terrainYKeyPositions": [
+				0.43,
+				0.48,
+				0.52,
+				0.58,
+				0.62,
+				0.68,
+				0.72
+			],
+			"terrainYKeyThresholds": [
+				1,
+				0.7,
+				0.7,
+				0.4,
+				0.4,
+				0.1,
+				0
+			]
+		}
+	}
+]
