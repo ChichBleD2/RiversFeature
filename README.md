@@ -17,7 +17,7 @@ it has not been tried widely. Bug reports, screenshots with coordinates, and cri
 
 ## Install
 
-1. Download `riverfeatures_1.0.0.zip` and put the zip itself (do not unpack it) into your `Mods` folder next to
+1. Download `riverfeatures_1.0.0.zip` from [Releases](https://github.com/ChichBleD2/quasimorbhoduck/releases) and put the zip itself (do not unpack it) into your `Mods` folder next to
    Rivers 5.0.2.
 2. Create a **new world** (or travel to land that has not been generated yet). Nothing changes in existing chunks.
 3. Optional: on the *Rivers & Lakes* tab of the world-creation screen, pick river length, deltas, oxbows, dry rivers,
@@ -125,7 +125,7 @@ Layout: `src/Rivers/` is the river network part (namespace `RiverFeatures.Rivers
 
 ## Feedback
 
-Please open an issue with: what you saw, the block coordinates (`/rffind` prints them), the world seed if you can share
+Please [open an issue](https://github.com/ChichBleD2/quasimorbhoduck/issues) with: what you saw, the block coordinates (`/rffind` prints them), the world seed if you can share
 it, your mod list, and whether the world was new. The `[RiverFeatures]` lines of `server-main.log` help a lot.
 
 Background: [docs/HISTORY.md](docs/HISTORY.md) is the development log (flight tests and fixes),
